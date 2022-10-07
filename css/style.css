@@ -406,6 +406,8 @@ button {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color 250ms var(--cubic-bezier),
+  background-color 250ms var(--cubic-bezier);
 }
 
 .team-soc-icon {
@@ -440,6 +442,8 @@ button {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color 250ms var(--cubic-bezier),
+  border 250ms var(--cubic-bezier);
 }
 
 .client-icon {
@@ -469,7 +473,7 @@ button {
 }
 
 .footer-list a {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier);
 
 }
 
@@ -534,7 +538,7 @@ button {
   color: var(--primary-white-color);
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .footer-soc-icon {
@@ -608,9 +612,9 @@ button {
   border-style: none;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier),
+  color 250ms var(--cubic-bezier),
+  box-shadow 250ms var(--cubic-bezier);
 ;
 }
 
@@ -633,7 +637,7 @@ button {
 }
 
 .portfolio-galary-link {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio-galary-link:hover,
@@ -651,7 +655,6 @@ button {
 
 .portfolio-overlay {
   position: absolute;
-  content: '';
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
