@@ -8,6 +8,7 @@
   --secondary-background: #f5f4fa;
   --logo-part-color: #000000;
   --background-button: #188ce8;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -112,6 +113,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .header-nav .item + .item {
@@ -122,6 +124,11 @@ button {
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+.header-contact .link {
+  transition: color 250ms var(--cubic-bezier);
+}
+
 .header-contact .link:hover,
 .header-contact .link:focus {
   color: var(--accent-color);
@@ -221,6 +228,7 @@ button {
   border-radius: 4px;
   border-style: none;
   padding: 10px 32px;
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .hero-btn:hover,
@@ -232,7 +240,7 @@ button {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17x;
+  line-height: 1.17x;background-
   text-align: center;
   color: var(--primary-text-color);
   /* padding-top: 94px; */
@@ -457,6 +465,12 @@ button {
 
 .footer-addres {
   margin-top: 20px;
+  
+}
+
+.footer-list a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-list a:hover,
@@ -520,6 +534,7 @@ button {
   color: var(--primary-white-color);
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -593,6 +608,10 @@ button {
   border-style: none;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+;
 }
 
 .portfolio-btn:hover,
@@ -611,6 +630,10 @@ button {
 
 .portfolio-galary-link {
   display: block;
+}
+
+.portfolio-galary-link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-galary-link:hover,
@@ -662,6 +685,7 @@ button {
   height: 100%;
   position: fixed;
   top: 0;
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -674,13 +698,13 @@ button {
   left: 50%;
   background-color: var(--main-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-  transform: translate(-50%, -50%); scale(1);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%); scale(0);
+  transform: translate(-50%, -50%) scale(0);
 
 }
 
