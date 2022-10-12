@@ -240,10 +240,9 @@ button {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17x;background-
+  line-height: 1.17;
   text-align: center;
   color: var(--primary-text-color);
-  /* padding-top: 94px; */
   margin-bottom: 50px;
 }
 
@@ -313,7 +312,6 @@ button {
 }
 
 .advantage-text {
-  /* font-size: 14px; */
   line-height: 1.71;
   color: var(--text-color);
 }
@@ -337,8 +335,7 @@ button {
   width: 370px;
   height: 70px;
   font-weight: 700;
-  line-height: 16px;
-  text-align: center;
+  line-height: 1, 14;
   text-transform: uppercase;
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -406,8 +403,7 @@ button {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: color 250ms var(--cubic-bezier),
-  background-color 250ms var(--cubic-bezier);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .team-soc-icon {
@@ -442,8 +438,7 @@ button {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: color 250ms var(--cubic-bezier),
-  border 250ms var(--cubic-bezier);
+  transition: color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
 }
 
 .client-icon {
@@ -469,12 +464,10 @@ button {
 
 .footer-addres {
   margin-top: 20px;
-  
 }
 
 .footer-list a {
   transition: color 250ms var(--cubic-bezier);
-
 }
 
 .footer-list a:hover,
@@ -612,10 +605,8 @@ button {
   border-style: none;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: background-color 250ms var(--cubic-bezier),
-  color 250ms var(--cubic-bezier),
-  box-shadow 250ms var(--cubic-bezier);
-;
+  transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio-btn:hover,
@@ -660,9 +651,7 @@ button {
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transform: translateY(0);
-  transition: transform 250ms var(--cubic-bezier),
-  opasity 250ms var(--cubic-bezier);
-  
+  transition: transform 250ms var(--cubic-bezier), opacity 250ms var(--cubic-bezier);
 }
 
 .porfolio-hover-text {
@@ -676,7 +665,6 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .portfolio-item:hover .portfolio-overlay,
@@ -702,7 +690,8 @@ button {
   top: 50%;
   left: 50%;
   background-color: var(--main-background);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic-bezier);
@@ -710,7 +699,6 @@ button {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-
 }
 
 .modal-btn {
@@ -734,5 +722,3 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
-
-
